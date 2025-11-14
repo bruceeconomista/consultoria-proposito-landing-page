@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria com Propósito | Gestão Financeira e Sustentação Bíblica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#0D47A1', // Azul Marinho (Autoridade)
+                        'secondary': '#FFC107', // Dourado (Propósito/Inspiração)
+                        'accent': '#1565C0', // Azul Médio
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        /* CSS Customizado: Garantir que a imagem do consultor se destaque */
+        .consultor-img {
+            aspect-ratio: 1/1;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center space-x-3">
+                <img src="./img/logoconsultoria.png" alt="Logo Consultoria com Propósito" class="h-12">
+                <span class="text-xl font-bold text-gray-800">Consultoria com Propósito</span>
+            </a>
+            
+            <nav id="menu-desktop" class="hidden md:flex md:items-center space-x-6 text-lg">
+                <a href="#pilares" class="hover:text-secondary transition duration-300">Pilares</a>
+                <a href="#servicos" class="hover:text-secondary transition duration-300">Serviços</a>
+                <a href="#consultor" class="hover:text-secondary transition duration-300">Sobre o Consultor</a>
+            </nav>
+            
+            <a href="https://api.whatsapp.com/send?phone=48996536507" target="_blank" class="bg-secondary text-primary font-semibold px-4 py-2 rounded-lg hover:bg-yellow-600 transition duration-300 hidden md:block">
+                <i class="fab fa-whatsapp mr-2"></i> Contato Imediato
+            </a>
+
+            <button id="menu-button" class="md:hidden text-primary text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden shadow-lg bg-white absolute w-full left-0 z-40 pb-2">
+            <a href="#pilares" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Pilares</a>
+            <a href="#servicos" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Serviços</a>
+            <a href="#consultor" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Sobre o Consultor</a>
+            <a href="https://api.whatsapp.com/send?phone=48996536507" target="_blank" class="block py-3 px-4 text-white bg-secondary hover:bg-yellow-600 text-center mt-2 mx-4 rounded-lg font-bold">
+                <i class="fab fa-whatsapp mr-2"></i> Contato Imediato
+            </a>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <img src="./img/fotocapa.jpg" 
+            alt="Pessoas celebrando sucesso e crescimento profissional" 
+            class="absolute inset-0 h-full w-full object-cover">
+        
+        <div class="absolute inset-0 bg-black opacity-70"></div> 
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl lg:text-7xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+                Prosperidade Financeira <br class="hidden sm:inline"> com Raízes Inabaláveis.
+            </h1>
+            <p class="text-xl lg:text-2xl mb-8 font-light drop-shadow">
+                Recupere lucros, aumente a prosperidade do seu negócio e sustente sua gestão em princípios eternos.
+            </p>
+            <a href="#pilares" class="bg-secondary text-primary font-bold text-xl px-10 py-4 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 uppercase tracking-wider">
+                Descubra os 2 Pilares
+            </a>
+        </div>
+    </section>
+
+    <section id="pilares" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-4 text-primary">
+                O Equilíbrio que o Seu Negócio Precisa
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+                Lucros sem propósito são frágeis. Propósito sem lucro é insustentável. Nossa consultoria integra **a excelência técnica** com **o alicerce dos princípios bíblicos** para um crescimento completo e duradouro.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-accent transition duration-500 hover:shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-chart-line text-5xl text-accent mr-4"></i> 
+                        <h3 class="text-3xl font-bold text-accent">
+                            Pilar Técnico: A Estrutura de Lucro
+                        </h3>
+                    </div>
+                    
+                    <p class="text-lg text-gray-700 mb-4 font-semibold">
+                        Dominar a gestão é essencial para a prosperidade.
+                    </p>
+                    <ul class="space-y-3 text-gray-600 text-lg">
+                        <li><i class="fas fa-arrow-up text-accent mr-2"></i> **Recuperação Imediata:** Ações táticas para estancar perdas de caixa e otimizar margens.</li>
+                        <li><i class="fas fa-tachometer-alt text-accent mr-2"></i> **Gestão de KPIs:** Definição e acompanhamento de métricas cruciais para o crescimento sustentável.</li>
+                        <li><i class="fas fa-shield-alt text-accent mr-2"></i> **Planejamento de Risco:** Estruturação financeira que protege seu patrimônio e sua família.</li>
+                        <li><i class="fas fa-wallet text-accent mr-2"></i> **Análise de Fluxo:** Criação de orçamentos e DREs que realmente funcionam para o seu setor.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border-t-4 border-secondary transition duration-500 hover:shadow-2xl">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-compass text-5xl text-secondary mr-4"></i> 
+                        <h3 class="text-3xl font-bold text-secondary">
+                            Pilar Emocional: O Alicerce Inabalável
+                        </h3>
+                    </div>
+                    
+                    <p class="text-lg text-gray-700 mb-4 font-semibold">
+                        O sucesso financeiro começa na mente e no coração do líder.
+                    </p>
+                    <ul class="space-y-3 text-gray-600 text-lg">
+                        <li><i class="fas fa-cross text-secondary mr-2"></i> **Mentoria de Mordomia:** Aplicação de princípios bíblicos sobre o dinheiro e bens.</li>
+                        <li><i class="fas fa-brain text-secondary mr-2"></i> **Inteligência Emocional:** Gerenciamento do medo, ansiedade e tomada de decisões sob pressão.</li>
+                        <li><i class="fas fa-seedling text-secondary mr-2"></i> **Visão e Legado:** Alinhamento do seu negócio com um propósito maior que garanta longevidade.</li>
+                        <li><i class="fas fa-users text-secondary mr-2"></i> **Liderança de Serviço:** Desenvolvimento de uma cultura empresarial baseada na ética cristã.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#servicos" class="bg-primary text-white font-bold text-base md:text-xl px-8 md:px-12 py-4 rounded-full shadow-lg hover:bg-secondary hover:text-primary transition duration-300 uppercase tracking-wider whitespace-normal inline-block text-center">
+                    Veja Como os Pilares Funcionam na Prática (Metodologia)
+                </a>
+            </div>
+            
+        </div>
+    </section>
+    <section id="servicos" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-4 text-primary">
+                Nossa Metodologia: O Caminho da Prosperidade Sustentável
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-4xl mx-auto">
+                Não entregamos apenas relatórios. Nossa Consultoria 360° é um programa de discipulado empresarial comprovado, dividido em **3 Fases de Transformação** para alinhamento total de lucro e propósito.
+            </p>
+
+            <div class="relative mb-20">
+                
+                <div class="hidden md:block absolute h-1 w-full bg-gray-200 top-1/2 transform -translate-y-1/2"></div>
+                
+                <div class="grid md:grid-cols-3 gap-12 relative z-10">
+                    
+                    <div class="bg-primary text-white p-8 rounded-xl shadow-2xl text-center transform hover:scale-[1.05] transition duration-500">
+                        <div class="text-5xl mb-4 text-secondary"><i class="fas fa-search"></i></div>
+                        <h3 class="text-2xl font-bold mb-3">Fase 1: CLAREZA E FUNDAÇÃO</h3>
+                        <p class="font-light text-left border-l-2 border-secondary pl-3 pt-2">
+                            <strong class="text-secondary">TÉCNICA:</strong> Auditoria financeira completa. Identificação de "gargalos" de despesas e oportunidades imediatas de aumento de margem de lucro.
+                            <br><br>
+                            <strong class="text-secondary">PROPÓSITO:</strong> Definição da missão bíblica do seu negócio e o papel do líder como mordomo.
+                        </p>
+                        <span class="inline-block mt-6 text-sm font-semibold bg-secondary text-primary px-4 py-1 rounded-full">Duração: 4 a 6 Semanas</span>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-2xl text-center border-t-4 border-accent transform hover:scale-[1.05] transition duration-500">
+                        <div class="text-5xl mb-4 text-accent"><i class="fas fa-cogs"></i></div>
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Fase 2: CRESCIMENTO SUSTENTÁVEL</h3>
+                        <p class="text-gray-700 font-light text-left border-l-2 border-accent pl-3 pt-2">
+                            <strong class="text-accent">TÉCNICA:</strong> Implementação de ferramentas de gestão (Dashboards) e construção de um orçamento operacional à prova de crises.
+                            <br><br>
+                            <strong class="text-accent">PROPÓSITO:</strong> Criação de um Código de Conduta baseado na Ética Bíblica para governança e liderança.
+                        </p>
+                        <span class="inline-block mt-6 text-sm font-semibold bg-accent text-white px-4 py-1 rounded-full">Foco: Métricas e Governança</span>
+                    </div>
+
+                    <div class="bg-gray-100 p-8 rounded-xl shadow-2xl text-center border-t-4 border-secondary transform hover:scale-[1.05] transition duration-500">
+                        <div class="text-5xl mb-4 text-secondary"><i class="fas fa-rocket"></i></div>
+                        <h3 class="text-2xl font-bold mb-3 text-primary">Fase 3: ESCALA E MULTIPLICAÇÃO</h3>
+                        <p class="text-gray-700 font-light text-left border-l-2 border-secondary pl-3 pt-2">
+                            <strong class="text-secondary">TÉCNICA:</strong> Planejamento estratégico de longo prazo (5+ anos) e análise de viabilidade de novos investimentos.
+                            <br><br>
+                            <strong class="text-secondary">PROPÓSITO:</strong> Mentoria contínua para desenvolver sucessores e garantir o legado espiritual da empresa.
+                        </p>
+                        <span class="inline-block mt-6 text-sm font-semibold bg-secondary text-primary px-4 py-1 rounded-full">Objetivo: Longevidade</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-primary text-white p-10 rounded-xl shadow-2xl mt-16">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="md:w-3/4 text-center md:text-left mb-6 md:mb-0">
+                        <h3 class="text-3xl font-bold mb-2 flex items-center justify-center md:justify-start">
+                            <i class="fas fa-chalkboard-teacher text-secondary mr-3"></i> O programa de Mentoreado (Seu Discipulado)
+                        </h3>
+                        <p class="text-lg font-light">
+                            Todo o processo é acompanhado de perto, de mãos dadas para superar os desafios do mundo empresarial e espiritual.  
+                        </p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=48996536507" target="_blank" class="bg-secondary text-primary font-bold text-lg px-8 py-3 rounded-lg hover:bg-yellow-600 transition duration-300 shadow-xl flex-shrink-0">
+                        Agende sua Análise Inicial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-4 text-primary">
+                A Voz de Quem Transformou o Negócio
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-4xl mx-auto">
+                Resultados financeiros comprovados e um alicerce inabalável. Veja o que nossos Mentoreados (Discipulados) dizem sobre a união de gestão e propósito.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-accent">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Em meses, revertemos o prejuízo. O conhecimento técnico de Economia foi cirúrgico, mas o que realmente mudou foi a nova visão de propósito no trabalho. Não é só dinheiro, é paz."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=1" alt="Avatar do Cliente 1">
+                        <div>
+                            <p class="text-primary font-bold">João S.</p>
+                            <p class="text-sm text-gray-500">CEO, Setor de Serviços</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-secondary">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "O mentor nos ajudou a criar um código de ética baseado na Bíblia que transformou o ambiente interno. O lucro aumentou porque a confiança da equipe disparou. Consultoria essencial."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=2" alt="Avatar do Cliente 2">
+                        <div>
+                            <p class="text-primary font-bold">Maria F.</p>
+                            <p class="text-sm text-gray-500">Diretora Administrativa, Indústria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-secondary">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Minha empresa estava crescendo, mas sem estrutura. O planejamento financeiro (Técnico) deu solidez e o pilar emocional me deu a sabedoria para lidar com a escala. Recomendo 100%."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=3" alt="Avatar do Cliente 3">
+                        <div>
+                            <p class="text-primary font-bold">Carlos P.</p>
+                            <p class="text-sm text-gray-500">Fundador, Tecnologia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-accent">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Eu estava com medo de investir. O consultor não só me mostrou os números (técnica) mas me ajudou a confiar na visão, alinhada à minha fé. O resultado veio em dobro!"
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=4" alt="Avatar do Cliente 4">
+                        <div>
+                            <p class="text-primary font-bold">Ana L.</p>
+                            <p class="text-sm text-gray-500">Empreendedora, E-commerce</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-accent">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Conseguimos reduzir o endividamento em 40% graças à gestão de fluxo de caixa. O melhor é saber que estamos construindo uma empresa que honra a Deus em cada decisão."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=5" alt="Avatar do Cliente 5">
+                        <div>
+                            <p class="text-primary font-bold">Roberta G.</p>
+                            <p class="text-sm text-gray-500">Gestora, Logística</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-secondary">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "A consultoria foi um divisor de águas. Saímos da ineficiência financeira para uma operação enxuta, e o mentor nos deu o suporte emocional para as decisões mais difíceis."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=6" alt="Avatar do Cliente 6">
+                        <div>
+                            <p class="text-primary font-bold">Silvia D.</p>
+                            <p class="text-sm text-gray-500">Sócia, Distribuidora</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-secondary">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "A clareza técnica do consultor é inquestionável (Economista!). O diferencial é a profundidade bíblica que ele traz para o negócio. É uma mentoria completa, não apenas consultoria."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=7" alt="Avatar do Cliente 7">
+                        <div>
+                            <p class="text-primary font-bold">Felipe B.</p>
+                            <p class="text-sm text-gray-500">Investidor, Varejo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-accent">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Precisávamos escalar e a consultoria nos deu o plano financeiro para isso. O pilar espiritual nos manteve firmes no nosso propósito e longe da vaidade do crescimento rápido."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=8" alt="Avatar do Cliente 8">
+                        <div>
+                            <p class="text-primary font-bold">Lucas M.</p>
+                            <p class="text-sm text-gray-500">Fundador, Educação</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-accent">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "Estávamos à beira de uma crise de liquidez. O Diagnóstico Profundo (Fase 1) nos salvou em 30 dias. O acompanhamento espiritual foi o que nos deu força para não desistir."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=9" alt="Avatar do Cliente 9">
+                        <div>
+                            <p class="text-primary font-bold">Raquel V.</p>
+                            <p class="text-sm text-gray-500">Proprietária, Moda</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-secondary">
+                    <div class="flex text-secondary mb-3">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="text-gray-700 italic mb-4 text-lg leading-relaxed">
+                        "É raro encontrar alguém com tanta experiência em finanças que também valoriza a integridade acima de tudo. Minha gestão econômica agora é forte e meu propósito é inegociável."
+                    </blockquote>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full object-cover mr-4" src="https://i.pravatar.cc/150?img=10" alt="Avatar do Cliente 10">
+                        <div>
+                            <p class="text-primary font-bold">Fernanda Z.</p>
+                            <p class="text-sm text-gray-500">Líder, Saúde e Bem-Estar</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section id="consultor" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16 text-primary">
+                Seu Mentor: 15 Anos de Técnica com Alicerce Inabalável
+            </h2>
+
+            <div class="bg-white p-10 rounded-xl shadow-2xl border-b-4 border-primary">
+                
+                <div class="grid md:grid-cols-3 gap-10 items-start">
+                    
+                    <div class="md:col-span-1 text-center">
+                        <img src="./img/minhafoto.jpeg" 
+                            alt="Foto do Consultor e Mentor de Propósito" 
+                            class="consultor-img rounded-full mx-auto shadow-xl border-4 border-secondary max-w-[250px] mb-6 object-cover"
+                            style="object-position: 50% 25%;">
+                        
+                        <p class="text-3xl font-bold text-primary mb-1">Bruce Duarte</p>
+                        <p class="text-xl text-secondary font-semibold">Consultor e Discipulador</p>
+                        <p class="text-sm text-gray-500 mt-4">+de 15 anos de experiência</p>
+                        
+                        <div class="mt-6 space-y-2 text-left">
+                            <p class="text-lg font-semibold text-primary"><i class="fas fa-graduation-cap"></i> Economista (UFSC) </p>
+                            <p class="text-lg font-semibold text-primary"><i class="fas fa-chart-pie"></i> MBA Finanças (FGV) </p>
+                            <p class="text-lg font-semibold text-primary"><i class="fas fa-cross"></i> Discipulador Bíblico</p>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2 space-y-8">
+                        
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary flex items-center mb-3">
+                                <i class="fas fa-chart-bar text-accent text-3xl mr-3"></i> 
+                                Especialista em Reestruturação Empresarial e Propósito Pessoal
+                            </h3>
+                            <p class="text-lg text-gray-700 leading-relaxed border-l-4 border-accent pl-4">
+                                Com mais de **15 anos** em consultoria, atuei na **reestruturação financeira e operacional** de empresas, garantindo o resgate de lucros e a otimização de capital. Sou um **Líder analítico** que utiliza **inteligência de dados (SQL, Python, Power BI)** para dar segurança na tomada de decisões estratégicas de DRE, Valuation e Captação de Recursos.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-primary flex items-center mb-3">
+                                <i class="fas fa-book-reader text-secondary text-3xl mr-3"></i> 
+                                Orientador de Liderança e Visão Bíblica (Pilar Emocional)
+                            </h3>
+                            <p class="text-lg text-gray-700 leading-relaxed border-l-4 border-secondary pl-4">
+                                Meu propósito é garantir que o seu sucesso financeiro seja **sustentável e ético**. Aplico princípios milenares de mordomia e liderança para blindar seu negócio contra crises de caráter e visão. A prosperidade que construímos é orientada a resultados e focada em deixar um **legado inegociável**.
+                            </p>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h4 class="text-xl font-bold text-primary mb-3"><i class="fas fa-tools text-primary mr-2"></i> Minhas Áreas de Domínio:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Gestão Financeira Avançada</span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Captação de Recursos</span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Modelagem de Dados (Python/SQL)</span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Planejamento Estratégico e OKRs</span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Transformação Digital (BI/ERP)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-6 text-center md:text-left">
+                            <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_WHATSAPP" target="_blank" class="bg-secondary text-primary font-bold text-base md:text-lg px-6 md:px-8 py-3 rounded-lg hover:bg-yellow-600 transition duration-300 shadow-xl uppercase tracking-wide whitespace-normal inline-block text-center">
+                                <i class="fab fa-whatsapp mr-2"></i> Inicie sua Transformação de 15 Anos de Experiência
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-4 text-primary">
+                Perguntas Comuns (FAQ)
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-16 max-w-4xl mx-auto">
+                Esclareça suas dúvidas sobre a metodologia que une alta performance em gestão e princípios de legado inabalável.
+            </p>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                
+                <div class="border border-gray-200 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 bg-gray-50 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span class="text-lg font-bold text-primary">1. Isso é uma consultoria financeira ou apenas uma pregação?</span>
+                        <i class="fas fa-plus text-secondary"></i> 
+                    </button>
+                    <div class="p-6 text-gray-700 bg-white border-l-4 border-accent">
+                        <p class="font-semibold mb-2">É 100% Consultoria Financeira Avançada, potencializada pelo Propósito.</p>
+                        <p>Nossa metodologia é baseada em 15 anos de experiência em **Finanças Corporativas, Controladoria e Data Analytics**. O pilar do Propósito serve como o **alicerce ético e de visão**, garantindo que as estratégias técnicas (DRE, Fluxo de Caixa, Valuation) não apenas gerem lucro, mas construam um legado duradouro e com integridade.</p>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 bg-gray-50 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span class="text-lg font-bold text-primary">2. Quais resultados concretos posso esperar do Pilar Técnico?</span>
+                        <i class="fas fa-plus text-secondary"></i> 
+                    </button>
+                    <div class="p-6 text-gray-700 bg-white border-l-4 border-accent">
+                        <p>Clientes geralmente alcançam: **Redução imediata** de 15% a 40% em custos não essenciais; **Aumento da margem de lucro** através de otimização de capital de giro; **Clareza total** sobre a saúde da empresa via *dashboards* personalizados e planos de **Captação de Recursos** estruturados.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 bg-gray-50 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span class="text-lg font-bold text-primary">3. Qual é o investimento necessário para iniciar a consultoria?</span>
+                        <i class="fas fa-plus text-secondary"></i> 
+                    </button>
+                    <div class="p-6 text-gray-700 bg-white border-l-4 border-accent">
+                        <p>O investimento é proporcional ao nível de complexidade e faturamento da sua empresa. Nosso primeiro passo é a **Análise Inicial e Diagnóstico**. Sugerimos que você **agende uma conversa** para que possamos entender suas necessidades e apresentar um plano de investimento personalizado e com retorno garantido.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 bg-gray-50 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span class="text-lg font-bold text-primary">4. Por que você usa o termo "Discipulado" empresarial?</span>
+                        <i class="fas fa-plus text-secondary"></i> 
+                    </button>
+                    <div class="p-6 text-gray-700 bg-white border-l-4 border-accent">
+                        <p>O termo reflete o nível de **acompanhamento profundo e mentoria** de longo prazo que oferecemos, que vai além de uma consultoria pontual. É um processo de transformação contínua do líder e da cultura empresarial, sustentado por uma visão de legado, não apenas de lucro momentâneo.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl shadow-md overflow-hidden">
+                    <button class="w-full text-left p-6 bg-gray-50 flex justify-between items-center hover:bg-gray-100 transition duration-300">
+                        <span class="text-lg font-bold text-primary">5. Minha empresa precisa ser de um segmento específico?</span>
+                        <i class="fas fa-plus text-secondary"></i> 
+                    </button>
+                    <div class="p-6 text-gray-700 bg-white border-l-4 border-accent">
+                        <p>Nossa metodologia é aplicável a **diversos setores** (Serviços, Indústria, Comércio, Tecnologia, Etc) que buscam estruturação financeira. O que une nossos clientes é a vontade de crescer com **integridade, ética e propósito**, valorizando a excelência tanto no Balanço Patrimonial quanto no Código de Conduta.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+    <footer class="bg-primary text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4">&copy; 2025 Consultoria com Propósito. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#servicos" class="hover:text-secondary transition duration-300">Serviços</a>
+                <a href="#consultor" class="hover:text-secondary transition duration-300">Carreira</a>
+                <a href="https://api.whatsapp.com/send?phone=48996536507" target="_blank" class="hover:text-green-400 transition duration-300">
+                    <i class="fab fa-whatsapp mr-1"></i> Agende Agora
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            // Alterna a classe 'hidden' no menu mobile
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Opcional: Fechar o menu ao clicar em um link (boa prática)
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Verifica se o menu está visível antes de tentar fechar
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
